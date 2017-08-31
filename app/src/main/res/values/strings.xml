@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">Myprofile-hngtask</string>
+    <string name="app_name">My Profile</string>
     <string name="action_settings">Settings</string>
+    <string name="name">Hello!, I\'m Nsikak Thompson</string>
+    <string name="stack"> Android Developer</string>
+    <string name="info">I am a Full-Stack Android developer from Ibesikpo Asutan,
+ Akwa Ibom State Nigeria.
+ With love for UI/UX design and prototyping.
+Pursuiting the future of becoming world class Developer.</string>
 </resources>

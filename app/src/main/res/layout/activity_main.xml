@@ -8,7 +8,7 @@
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="350dp"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
@@ -18,12 +18,79 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/me"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/avatar"
+                fontPath="fonts/Raleway-Bold.ttf"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                tools:ignore="MissingPrefix" />
+            <TextView
+                android:textSize="17sp"
+                android:id="@+id/stack"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/name"
+                fontPath="fonts/Raleway-SemiBold.ttf"
+                android:textColor="#E0E0E0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stack"
+                tools:ignore="MissingPrefix" />
+            <ImageView
+                android:id="@+id/check"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="20dp"
+                android:layout_below="@+id/name"
+                android:layout_toRightOf="@id/stack"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_check_circle_black_24dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/stack"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/slack"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/slack"/>
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/github"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/stack"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:src="@drawable/github"/>
+            </LinearLayout>
+
+        </RelativeLayout>
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_main" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
